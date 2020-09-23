@@ -1,40 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-    <script type="text/javascript" src="facebookpagejavascipt.js"></script>
-	<link rel="stylesheet" type="text/css" href="facebookstyle.css">
+	<script type="text/javascript" src="instagrampagejavascript.js"></script>
+     <link rel="stylesheet" type="text/css" href="instagramstyle.css">
+	 <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title></title>
 </head>
 <body>
+	<div id="wrapper">
+		<div class="maincontent">
 <div class="image">
-	<img src="https://www.logo.wine/a/logo/Facebook/Facebook-Logo.wine.svg" alt="logo.wine" style="height: 300px;width: 300px;">
-</div>
-<div class="helps">
-	Facebook helps you connect and share <br>with the people in your life.
-</div>
-<div class="wrapper">
-	<form method="POST" action="/facebookLogin" onsubmit="display()">
-	<div  class="input1">
-		<p><input id="check1" type="text" name="username" placeholder="Email address or phone number" class="uname"></p>
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png" alt="commons.wikimedia.org" style="height: 60px;width: 175px;">
+	</div>
+	<form action="/login" method="POST">
+	<div class="input1">
+		<p><input id="text1" name="username" type="text" placeholder="Phone number,username, or email" class="usern"></p>
 	</div>
 	<div class="input2">
-		<p><input id="check2" type="password" name="password" placeholder="Password" class="password"></p>
+
+		<p><input id="text2" name="password" type="password" placeholder="Password" class="pass"></p>
 	</div>
-	<div class="login">
-	<p><button >Log In</button></p>
+    
+      <div class="login">
+	<p><button type="submit" class="btn">login</button></a></p>
     </div>
-    <div class="forget">
-    	<p><a href="#">Forgotten account?</a></p>
-    </div>
-    <hr>
-    <div class="submit">
-    	<p><input type="submit" value="Create New Account" class="submit1"></p>
-    </div>
-    </div>
-    </form>
-    <div class="create">
-    	<p><a href="#">Create a Page </a>for a celebrity, band or business.</p>
-    </div>
-    </body>
+    
+    <div class="or">
+		<br>
+		<div class="or"></div>
+<p>OR</p>
+	</div>
+	<div class="logo1">
+		<br>
+		<p><a href="#"><i class="fa fa-facebook-square"></i></a>
+		<span class="span"><a href="/facebookLogin">Log in with Facebook</a></span></p>
+		</div>
+	    <div class="forgot">
+	    	<br>
+	    	<p><a href="#">Forgot password?</a></p>
+	    </div>
+	</div>
+	</div>
+	<br>
+	<div class="manage">
+		<div class="dont">
+			<p>Don't have an account?<a href="/signup">Sign up</a></p>
+		</div>
+	</div>
+	<br>
+	<div class="app">
+		<p>Get the app</p>
+	</div>
+	<div class="logo2">
+		<p><img src="https://www.teleware.com/wp-content/uploads/2018/08/Google-play-and-istore-badges.jpg" alt="TeleWare.com" style="height: 90px; width: 250px;"></p>
+		
+	</div>
+</body>
 </html>
