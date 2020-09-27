@@ -9,22 +9,6 @@ function alert_message()
 		alert("information not provided");
 	}
 	
-// 	else if()
-// 	{
-// 		alert("name not provided");
-        	
-// 	}
-
-// 	else if(c.value.trim()=="")
-// 	{
-// 		alert("username not provided");
-	
-// }
-// 	else if(d.value.trim()=="")
-// 	{
-// 			alert("password not provided");
-
-//}
 else
 {
 	alert("account created succesfully");

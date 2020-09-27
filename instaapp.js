@@ -27,11 +27,11 @@ let facebookUsers = [
     }
 ];
 app.get("/login", function(request, resposne){
-    resposne.sendFile(__dirname + "/instagram page.html");
+    resposne.sendFile(__dirname + "/signin.html");
 });
 
 app.get("/", function (request, resposne) { 
-    resposne.sendFile(__dirname + "/instanewsfeedpage.html");
+    resposne.sendFile(__dirname + "/profilepage.html");
 });
 
 app.post("/login", function(request, response){
@@ -46,7 +46,7 @@ app.post("/login", function(request, response){
 });
 
 app.get("/signup", function (resquest, response) { 
-    response.sendFile(__dirname + "/loginwithfacebook.html");
+    response.sendFile(__dirname + "/signup.html");
 });
 
 app.post("/signup", function(request, response){
@@ -59,7 +59,7 @@ app.post("/signup", function(request, response){
 });
 
 app.get("/facebookLogin", function (request, response) { 
-    response.sendFile(__dirname + "/facebook page.html");
+    response.sendFile(__dirname + "/facebooklogin.html");
 });
 
 app.post("/facebookLogin", function (request, response) { 
@@ -70,6 +70,7 @@ app.post("/facebookLogin", function (request, response) {
             response.redirect("/");
         }
     }
+    response.redirect("/login")
    // response.send("Wrong Username Or Password. Please Try again.");
     
 });
